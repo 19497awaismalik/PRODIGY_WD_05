@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Weather-App</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" id="search">
+            <button onclick="handle()">Search</button>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="mobile-searh-bar">
+            <input type="text" placeholder="Search" id="mobile-search">
+            <i class="fas fa-search" id="mobile-button"></i>
+        </div>
+        <h1>Weather for <span id="heading"></span> </h1>
+        <div class="card">
+            <div class="card-item">
+                <p class="heading">Temperatures</p>
+                <span class="temperature" id="temperature">
+                </span><span class="icon"> &#8451;</span>
+
+                <p>Temperature <span id="temperature-2"></span></p>
+                <p>Min Temperature <span id="temp-min"></span></p>
+                <p>Max Temperature <span id="temp-max"></span></p>
+            </div>
+            <div class="card-item">
+                <p class="heading">Humidity Info</p>
+                <span class="humidity" id="humidity"></span><span class="icon"> %</span>
+                <p>Wind Degree <span id="wind-dregee"></span></p>
+                <p>Feels Like <span id="feels"></span></p>
+                <p>lan,lag <span id="lan-lag"></span></p>
+            </div>
+            <div class="card-item">
+                <p class="heading">Wind Info</p>
+                <span class="wind-speed" aria-colspan="wind-speed" id="wind-speed"></span><span class="icon">
+                    Km/hr</span>
+                <p>Wind Speed is <span id="wind-speed-2"></span></p>
+                <p>Sunrise Time is <span id="sunrise"></span></p>
+                <p>Sunset Time is <span id="sunset"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-table">
+        <h2>Weather of other common places</h2>
+        <div class="table">
+            <table>
+                    <!-- <td class="location">Lahore</td> -->
+                    <td>location</td>
+                    <td>Temp</td>
+                    <td>Min Temp</td>
+                    <td>Max Temp</td>
+                    <td>Humidity</td>
+                    <td class="sunrise">Feels</td>
+                    <td class="sunrise">Wind Degree</td>
+                    <td class="sunrise">Sunrise</td>
+                    <td class="sunset">Sunset</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="location">Islamabad</td>
+                        <td id="is-temp"></td>
+                        <td id="is-mintemp"></td>
+                        <td id="is-maxtemp"></td>
+                        <td id="is-humidity"></td>
+                        <td id="is-feels" class="sunrise"></td>
+                        <td id="is-winddeg" class="sunrise"></td>
+                        <td id="is-sunrise" class="sunrise"></td>
+                        <td id="is-sunset" class="sunset"></td>
+                    </tr>
+                    <tr>
+                        <td id="location">Karachi</td>
+                        <td id="ka-temp"></td>
+                        <td id="ka-mintemp"></td>
+                        <td id="ka-maxtemp"></td>
+                        <td id="ka-humidity"></td>
+                        <td id="ka-feels" class="sunrise"></td>
+                        <td id="ka-winddeg" class="sunrise"></td>
+                        <td id="ka-sunrise" class="sunrise"></td>
+                        <td id="ka-sunset" class="sunset"></td>
+                    </tr>
+                    <tr>
+                        <td id="location">Faisalabad</td>
+                        <td id="fa-temp"></td>
+                        <td id="fa-mintemp"></td>
+                        <td id="fa-maxtemp"></td>
+                        <td id="fa-humidity"></td>
+                        <td id="fa-feels" class="sunrise"></td>
+                        <td id="fa-winddeg" class="sunrise"></td>
+                        <td id="fa-sunrise" class="sunrise"></td>
+                        <td id="fa-sunset" class="sunset"></td>
+                    </tr>
+                    <tr>
+                        <td id="location">Pendi</td>
+                        <td id="ks-temp"></td>
+                        <td id="ks-mintemp"></td>
+                        <td id="ks-maxtemp"></td>
+                        <td id="ks-humidity"></td>
+                        <td id="ks-feels" class="sunrise"></td>
+                        <td id="ks-winddeg" class="sunrise"></td>
+                        <td id="ks-sunrise" class="sunrise"></td>
+                        <td id="ks-sunset" class="sunset"></td>
+                    </tr>
+                </tbody>
+        </div>
+
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
